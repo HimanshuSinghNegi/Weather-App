@@ -1,0 +1,16 @@
+<h1> Hello your welcome to Weather Page</h1>
+<style type="text/css">
+</style>
+<div class="pin">
+<form action="/analyze" method="post"> {% csrf_token %}
+	<input type="text" id ="zipcode1" name="zipcode1" />
+	<button type="submit">Search</button>
+</form>
+</div>
+<strong>
+{{city}}<br>
+{{quality}}<br>
+{{category}}
+
+</strong>
+<body bgcolor={{color}}></body>
